@@ -2,7 +2,7 @@ import { TrendingUp, Mail, Briefcase } from 'lucide-react';
 import { StatCard } from '@/components/ui/StatCard';
 import { Email, JobApplication, CryptoAsset } from '@/types/dashboard';
 
-interface PortfolioSummaryProps {
+export interface PortfolioSummaryProps {
     emails: Email[];
     jobs: JobApplication[];
     crypto: CryptoAsset[];

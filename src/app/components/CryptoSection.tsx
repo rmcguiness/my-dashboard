@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/Card';
 import { CardHeader } from '@/components/ui/CardHeader';
 import { CryptoAsset } from '@/types/dashboard';
 
-interface CryptoSectionProps {
+export interface CryptoSectionProps {
     crypto: CryptoAsset[];
 }
 

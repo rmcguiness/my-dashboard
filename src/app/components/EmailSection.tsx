@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/Card';
 import { CardHeader } from '@/components/ui/CardHeader';
 import { Email } from '@/types/dashboard';
 
-interface EmailSectionProps {
+export interface EmailSectionProps {
     emails: Email[];
 }
 

@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/Card';
 import { CardHeader } from '@/components/ui/CardHeader';
 import { JobApplication } from '@/types/dashboard';
 
-interface JobSectionProps {
+export interface JobSectionProps {
     jobs: JobApplication[];
 }
 

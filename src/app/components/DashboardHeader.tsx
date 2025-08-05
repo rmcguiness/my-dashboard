@@ -3,7 +3,7 @@
 import { RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 
-interface DashboardHeaderProps {
+export interface DashboardHeaderProps {
     onRefresh: () => void;
     loading: boolean;
 }

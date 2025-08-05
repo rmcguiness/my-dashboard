@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { CardHeader } from '@/components/ui/CardHeader';
 import { GitHubRepo } from '@/types/dashboard';
 
-interface GitHubSectionProps {
+export interface GitHubSectionProps {
     repos: GitHubRepo[];
 }
 
