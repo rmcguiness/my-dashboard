@@ -1,10 +1,8 @@
 import React from 'react';
 import { Card } from './Card';
-import { GripVertical } from 'lucide-react';
 
 interface DraggableSectionProps {
     id: string;
-    title: React.ReactNode;
     children: React.ReactNode;
     isDragging: boolean;
     onDragStart: (e: React.DragEvent) => void;
@@ -15,7 +13,6 @@ interface DraggableSectionProps {
 
 export const DraggableSection: React.FC<DraggableSectionProps> = ({
     id,
-    title,
     children,
     isDragging,
     onDragStart,
@@ -32,6 +29,7 @@ export const DraggableSection: React.FC<DraggableSectionProps> = ({
             onDragEnd={onDragEnd}
             className={`transition-all duration-200 ${isDragging ? 'opacity-50 scale-95' : 'opacity-100 scale-100'
                 }`}
+            id={id}
         >
             <Card className="h-full">
                 <div className="cursor-move">

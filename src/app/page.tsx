@@ -22,25 +22,21 @@ export default function Dashboard() {
   const initialSections: DraggableSectionType[] = [
     {
       id: 'email',
-      title: 'Email',
       component: EmailSection,
       props: { emails },
     },
     {
       id: 'github',
-      title: 'GitHub',
       component: GitHubSection,
       props: { repos },
     },
     {
       id: 'jobs',
-      title: 'Job Applications',
       component: JobSection,
       props: { jobs },
     },
     {
       id: 'crypto',
-      title: 'Crypto Portfolio',
       component: CryptoSection,
       props: { crypto },
     },
@@ -76,7 +72,6 @@ export default function Dashboard() {
               <DraggableSection
                 key={section.id}
                 id={section.id}
-                title={section.title}
                 isDragging={draggedIndex === index}
                 onDragStart={(e) => handleDragStart(index)}
                 onDragOver={handleDragOver}

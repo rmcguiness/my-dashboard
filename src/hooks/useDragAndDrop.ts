@@ -6,7 +6,6 @@ import { useState, useCallback } from 'react';
 
 export interface DraggableSection {
 	id: string;
-	title: string;
 	component:
 		| ((props: EmailSectionProps) => React.ReactNode)
 		| ((props: CryptoSectionProps) => React.ReactNode)
