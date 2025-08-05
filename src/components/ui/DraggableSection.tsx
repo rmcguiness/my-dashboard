@@ -4,7 +4,7 @@ import { GripVertical } from 'lucide-react';
 
 interface DraggableSectionProps {
     id: string;
-    title: string;
+    title: React.ReactNode;
     children: React.ReactNode;
     isDragging: boolean;
     onDragStart: (e: React.DragEvent) => void;
@@ -34,13 +34,9 @@ export const DraggableSection: React.FC<DraggableSectionProps> = ({
                 }`}
         >
             <Card className="h-full">
-                <div className="p-6 border-b border-gray-200 dark:border-gray-700 cursor-move select-none">
-                    <div className="flex items-center gap-2">
-                        <GripVertical className="w-4 h-4 text-gray-400" />
-                        <h3 className="text-lg font-semibold">{title}</h3>
-                    </div>
+                <div className="cursor-move">
+                    {children}
                 </div>
-                <div className="p-6">{children}</div>
             </Card>
         </div>
     );
