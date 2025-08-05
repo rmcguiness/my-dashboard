@@ -73,9 +73,9 @@ export default function Dashboard() {
                 key={section.id}
                 id={section.id}
                 isDragging={draggedIndex === index}
-                onDragStart={(e) => handleDragStart(index)}
+                onDragStart={() => handleDragStart(index)}
                 onDragOver={handleDragOver}
-                onDrop={(e) => handleDrop(index)}
+                onDrop={() => handleDrop(index)}
                 onDragEnd={handleDragEnd}
               >
                 {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
