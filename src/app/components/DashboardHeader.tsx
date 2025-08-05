@@ -20,7 +20,7 @@ export function DashboardHeader({ onRefresh, loading }: DashboardHeaderProps) {
                         onClick={onRefresh}
                         disabled={loading}
                         icon={RefreshCw}
-                        className={loading ? 'animate-spin' : ''}
+                        iconClassName={loading ? 'animate-spin' : ''}
                     >
                         Refresh
                     </Button>
