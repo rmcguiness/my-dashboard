@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { DashboardHeader } from './components/DashboardHeader';
-import { PortfolioSummary } from './components/PortfolioSummary';
-import { EmailSection } from './components/EmailSection';
-import { GitHubSection } from './components/GitHubSection';
-import { JobSection } from './components/JobSection';
-import { CryptoSection } from './components/CryptoSection';
+import { DashboardHeader } from './_components/DashboardHeader';
+import { PortfolioSummary } from './_components/PortfolioSummary';
+import { EmailSection } from './_components/EmailSection';
+import { GitHubSection } from './_components/GitHubSection';
+import { JobSection } from './_components/JobSection';
+import { CryptoSection } from './_components/CryptoSection';
 import { DraggableSection } from '../components/ui/DraggableSection';
 import { useDragAndDrop, DraggableSection as DraggableSectionType } from '../hooks/useDragAndDrop';
 import { Email, GitHubRepo, JobApplication, CryptoAsset } from '@/types/dashboard';

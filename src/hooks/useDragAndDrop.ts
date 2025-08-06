@@ -1,7 +1,7 @@
-import { CryptoSectionProps } from '@/app/components/CryptoSection';
-import { EmailSectionProps } from '@/app/components/EmailSection';
-import { GitHubSectionProps } from '@/app/components/GitHubSection';
-import { JobSectionProps } from '@/app/components/JobSection';
+import { CryptoSectionProps } from '@/app/_components/CryptoSection';
+import { EmailSectionProps } from '@/app/_components/EmailSection';
+import { GitHubSectionProps } from '@/app/_components/GitHubSection';
+import { JobSectionProps } from '@/app/_components/JobSection';
 import { useState, useCallback } from 'react';
 
 export interface DraggableSection {
